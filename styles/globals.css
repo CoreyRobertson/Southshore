@@ -932,9 +932,13 @@ textarea {
   /* Header Section */
 
   .header_container {
-
+    border: solid 1px var(--color-navy);
     height: auto;
+    background-color: var(--color-white);
+  }
 
+  .video {
+    display: none;
   }
 
   .header_content-container {
