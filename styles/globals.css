@@ -147,8 +147,18 @@ body {
   margin-bottom: 1rem;
 }
 
+.nav_menu-icon {
+  display: none;
+}
+
 .LogoLight {
   margin-left: 2rem;
+  height: 50px;
+  width: 50px;
+}
+
+.nav_menu-icon {
+  display: none;
 }
 
 .nav_link-container {
@@ -235,11 +245,13 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  height: 30vh;
+  height: auto;
   padding: 2rem;
+  gap: 4rem;
   margin-bottom: 1rem;
   /* background-color: var(--color-navy); */
   border: solid 1px var(--color-navy);
+
 }
 
 .intro_image {
@@ -266,6 +278,7 @@ a {
   padding: .5rem 1rem 0 1rem;
   cursor: pointer;
   font-family: "Acumin Pro";
+  font-weight: normal;
   color: var(--color-white);
 }
 
@@ -321,7 +334,7 @@ a {
 }
 
 .card_dark-content p {
-  font-size: 20px !important;
+  font-size: 26px !important;
   font-weight: normal;
   color: var(--color-blue) !important;
 }
@@ -916,6 +929,13 @@ textarea {
     margin-bottom: 1rem;
   }
 
+  .nav_menu-icon {
+    display: block;
+    color: var(--color-blue);
+    height: 30px;
+    width: 30px;
+  }
+
 
   .nav_link-container {
     display: none;
@@ -975,7 +995,7 @@ textarea {
     align-items: flex-start;
     justify-content: space-between;
     height: auto;
-
+    padding: 1rem;
   }
 
 
@@ -1009,7 +1029,7 @@ textarea {
   }
 
   .card_dark-content p {
-    font-size: 16px !important;
+    font-size: 22px !important;
   }
 
   /* Our Work Summary Section */
@@ -1027,7 +1047,7 @@ textarea {
   .work_background {
     z-index: -1;
     border-radius: 40px;
-    height: 55% !important;
+    height: 60% !important;
   }
 
   .work_summary-card {
@@ -1066,7 +1086,7 @@ textarea {
   }
 
   .why_left-container p {
-    font-size: 20px;
+    font-size: 24px;
   }
 
 
@@ -1104,7 +1124,7 @@ textarea {
   }
 
   .cta h3 {
-    font-size: 36px;
+    font-size: 38px;
     color: var(--color-grey);
     font-family: 'Nimbus Sans D OT Light';
     font-weight: normal;
@@ -1115,7 +1135,7 @@ textarea {
   }
 
   .cta p {
-    font-size: 16px;
+    font-size: 20px;
     color: var(--color-grey);
     margin: 0;
     text-align: center;

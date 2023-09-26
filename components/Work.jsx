@@ -57,7 +57,7 @@ const Work = () => {
             animate={controls}
             variants={sectionVariants}
             className='work_summary-container'>
-            <Image className='work_background' src='/images/home.png' alt='Iphones' layout='fill' quality={100} />
+            <Image className='work_background' src='/images/Home.png' alt='Iphones' layout='fill' quality={100} />
             <motion.div ref={cardRef}
                 initial="hidden"
                 animate={cardControls}

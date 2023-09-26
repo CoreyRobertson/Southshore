@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 
 const Navbar = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -53,7 +54,7 @@ const Navbar = () => {
         >
             <motion.div className='navbar_layout' initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                 <Link href='/'>
-                    <Image className='LogoLight' src='/images/logoflaglight.svg' height={60} width={60} alt='BlueFlag' />
+                    <Image className='LogoLight' src='/images/logoflaglight.svg' width={20} height={20} alt='BlueFlag' />
                 </Link>
                 <div className='nav_link-container'>
 
@@ -63,6 +64,7 @@ const Navbar = () => {
                     <Link className='font-nimbus' href='/contactus'>Contact Us</Link>
 
                 </div>
+                <HiOutlineMenuAlt3 className='nav_menu-icon' />
             </motion.div>
         </motion.nav>
     );
