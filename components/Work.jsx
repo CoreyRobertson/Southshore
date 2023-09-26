@@ -69,7 +69,7 @@ const Work = () => {
                 </div>
                 <motion.div className='work_card-content' variants={childVariants}>
                     <p className='font-nimbus'>Lorem ipsum dolor sit amet. In inventore eligendi et vero quis ut delectus impedit et veniam culpa non quam dolor vel velit voluptatem id distinctio mollitia!</p>
-                    <motion.button className='button_orange' type='button' variants={childVariants}>EXPLORE</motion.button>
+                    <motion.button className='button_orange' type='button' variants={childVariants} whileHover={{ scale: 1.05 }}>EXPLORE</motion.button>
                 </motion.div>
             </motion.div>
         </motion.section>

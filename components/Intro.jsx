@@ -45,7 +45,7 @@ const Intro = () => {
 
     const controls = useAnimation();
     const [ref, inView] = useInView({
-        threshold: 0.5,
+        threshold: 0.2,
     });
 
     useEffect(() => {
@@ -59,7 +59,6 @@ const Intro = () => {
             animate={controls}
             variants={sectionVariants}
             className='intro_container'>
-            <Image className='intro_image' src='/images/background5.png' layout='fill' alt='BlueBackground5' quality={100} />
             <motion.div
                 className='intro_button-container'
                 initial="hidden"
@@ -101,7 +100,7 @@ const Intro = () => {
                     <div className='card_dark-content'>
                         <p className='font-nimbus_bold'>Need a <span>new website</span> for your business? Searching for growth online? With our tailored Web Design solutions, <span>we can help you </span> chart a course towards success.</p>
                         <Link href='/ourSolutions'>
-                            <button type='button' className='button_orange'>LEARN MORE</button>
+                            <motion.button type='button' className='button_orange' whileHover={{ scale: 1.05 }}>LEARN MORE</motion.button>
                         </Link>
                     </div>
                 </motion.div>

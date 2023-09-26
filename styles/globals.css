@@ -128,10 +128,6 @@ body {
   border-left: 15px solid var(--color-orange);
 }
 
-.button_orange:hover {
-  transform: translateX(1rem);
-  transition: .3s ease-in-out;
-}
 
 .arrow_right {
   font-size: 30px;
@@ -144,7 +140,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-navy);
+  background-color: var(--color-white);
   border-radius: 30px;
   height: 3rem;
   padding: 1rem;
@@ -152,7 +148,7 @@ body {
 }
 
 .LogoLight {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .nav_link-container {
@@ -196,15 +192,10 @@ a {
   margin-bottom: 1rem;
 }
 
-.video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
+.header_background {
   border-radius: 40px;
 }
+
 
 .header_content-container {
   z-index: 100 !important;
@@ -244,10 +235,11 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  height: 50vh;
+  height: 30vh;
   padding: 2rem;
   margin-bottom: 1rem;
-
+  /* background-color: var(--color-navy); */
+  border: solid 1px var(--color-navy);
 }
 
 .intro_image {
@@ -269,7 +261,7 @@ a {
   border-radius: 20px;
   height: 50px;
   border: none;
-  background-color: var(--color-blue);
+  background-color: var(--color-navy);
   font-size: 16px;
   padding: .5rem 1rem 0 1rem;
   cursor: pointer;
@@ -286,7 +278,8 @@ a {
 }
 
 .intro_card {
-  background-color: rgba(241, 241, 244, 0.7);
+  background-color: transparent;
+  border: solid 1px var(--color-navy);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -315,6 +308,7 @@ a {
   width: 50%;
   justify-content: flex-end;
   align-items: flex-end;
+  background-color: var(--color-navy);
   border: solid 1px var(--color-grey);
 }
 
@@ -329,11 +323,13 @@ a {
 .card_dark-content p {
   font-size: 20px !important;
   font-weight: normal;
+  color: var(--color-blue) !important;
 }
 
 .card_dark-content p span {
   font-family: var(--font-italic);
   font-weight: normal;
+  color: var(--color-grey);
 
 }
 
@@ -915,6 +911,7 @@ textarea {
   .navbar_layout {
     border-radius: 20px;
     height: 1rem;
+
     padding: 1rem;
     margin-bottom: 1rem;
   }
@@ -932,9 +929,8 @@ textarea {
   /* Header Section */
 
   .header_container {
-    border: solid 1px var(--color-navy);
     height: auto;
-    background-color: var(--color-white);
+
   }
 
   .video {
@@ -949,18 +945,18 @@ textarea {
   }
 
   .header_content-container h2 {
-    font-size: 60px;
+    font-size: 84px;
     letter-spacing: -3px;
-    line-height: 50px;
+    line-height: 60px;
     font-family: 'Nimbus Sans D OT Light';
     font-weight: normal;
     margin: 0;
-    width: 80%;
+    width: 90%;
     color: var(--color-navy);
   }
 
   .header_content-container p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     font-family: 'Nimbus Sans D OT Light';
     font-weight: normal;
