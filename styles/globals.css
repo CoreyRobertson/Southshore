@@ -68,7 +68,7 @@ body {
 .font-nimbus {
   font-family: 'Nimbus Sans D OT Light', sans-serif;
   font-size: 20px;
-
+  font-weight: normal;
 }
 
 .font-nimbus_bold {
@@ -217,6 +217,8 @@ a {
   letter-spacing: -3px;
   font-family: 'Nimbus Sans D OT Light';
   margin: 0;
+  font-weight: normal;
+
   width: auto;
   color: var(--color-navy);
 }
@@ -225,6 +227,7 @@ a {
   font-size: 16px;
   line-height: 20px;
   font-family: 'Nimbus Sans D OT Light';
+  font-weight: normal;
   margin: 0;
   width: 50%;
   color: var(--color-navy);
@@ -334,6 +337,7 @@ a {
 .intro_card-dark p {
   color: var(--color-grey);
   font-family: "Nimbus Sans D OT Light";
+  font-weight: normal;
   font-size: 16px;
 }
 
@@ -599,6 +603,7 @@ a {
   font-size: 96px;
   color: var(--color-grey);
   font-family: 'Nimbus Sans D OT Light';
+  font-weight: normal;
   margin: 0;
   letter-spacing: -3px;
 }
@@ -913,6 +918,7 @@ textarea {
     letter-spacing: -3px;
     line-height: 50px;
     font-family: 'Nimbus Sans D OT Light';
+    font-weight: normal;
     margin: 0;
     width: 80%;
     color: var(--color-navy);
@@ -922,7 +928,7 @@ textarea {
     font-size: 16px;
     line-height: 20px;
     font-family: 'Nimbus Sans D OT Light';
-    font-weight: 300;
+    font-weight: normal;
     margin: 1rem 0;
     width: 90%;
   }
@@ -1068,6 +1074,7 @@ textarea {
     font-size: 36px;
     color: var(--color-grey);
     font-family: 'Nimbus Sans D OT Light';
+    font-weight: normal;
     margin: 0;
     text-align: center;
     letter-spacing: -1px;
