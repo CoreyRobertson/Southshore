@@ -301,6 +301,7 @@ a {
   align-items: center;
   color: var(--color-navy);
   font-family: "Acumin Pro";
+  font-weight: normal;
   margin: 0 1rem;
 
 }
@@ -327,10 +328,12 @@ a {
 
 .card_dark-content p {
   font-size: 20px !important;
+  font-weight: normal;
 }
 
 .card_dark-content p span {
   font-family: var(--font-italic);
+  font-weight: normal;
 
 }
 
@@ -380,6 +383,8 @@ a {
   align-items: center;
   color: var(--color-navy);
   font-family: "Acumin Pro";
+  font-weight: normal;
+
   gap: 1rem;
 }
 
@@ -421,6 +426,8 @@ a {
   align-items: center;
   color: var(--color-navy);
   font-family: "Acumin Pro";
+  font-weight: normal;
+
   gap: .5rem;
   font-size: 20px !important;
 }
@@ -438,6 +445,8 @@ a {
   font-size: 26px;
   width: 100%;
   color: var(--color-navy);
+  font-weight: normal;
+
 }
 
 .why_left-container p span {
@@ -463,6 +472,8 @@ a {
   padding: .5rem 1rem 0 1rem;
   cursor: pointer;
   font-family: "Acumin Pro";
+  font-weight: normal;
+
   color: var(--color-blue);
 
 }
@@ -480,6 +491,8 @@ a {
   padding: .5rem 1rem 0 1rem;
   cursor: pointer;
   font-family: "Acumin Pro";
+  font-weight: normal;
+
   color: var(--color-white);
 }
 
@@ -729,6 +742,8 @@ textarea {
 .solutions_left-container p {
   font-size: 26px;
   color: var(--color-navy);
+  font-weight: normal;
+
 }
 
 .solutions_left-container p span {
@@ -775,6 +790,8 @@ textarea {
 
 .card_subtitle {
   font-family: var(--font-italic);
+  font-weight: normal;
+  font-style: italic;
   color: var(--color-blue);
   font-size: 24px;
   margin: 0;
@@ -790,6 +807,8 @@ textarea {
 .service_card-text {
   font-size: 20px;
   color: var(--color-navy);
+  font-weight: normal;
+
 }
 
 .solution_heading-icon {
@@ -814,6 +833,8 @@ textarea {
   align-items: center;
   color: var(--color-navy);
   font-family: "Acumin Pro";
+  font-weight: normal;
+
   gap: .5rem;
   font-size: 20px !important;
 }
@@ -876,6 +897,8 @@ textarea {
 
   .brand {
     font-family: 'Acumin Pro Bold';
+    font-weight: normal;
+
     color: var(--color-blue);
     margin: 0;
     letter-spacing: -1px;
@@ -885,7 +908,8 @@ textarea {
 
   .brand span {
     font-family: 'Acumin Pro';
-    font-weight: 300;
+    font-weight: normal;
+
   }
 
   .navbar_layout {
@@ -1016,6 +1040,8 @@ textarea {
     align-items: center;
     color: var(--color-navy);
     font-family: "Acumin Pro";
+    font-weight: normal;
+
     gap: 1rem;
   }
 
