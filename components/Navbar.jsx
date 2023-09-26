@@ -48,7 +48,7 @@ const Navbar = () => {
     return (
         <motion.nav
             ref={navbarRef}
-            initial={{ y: -100, opacity: 0 }}
+            initial={{ y: -50, opacity: 0 }}
             animate={controls}
         >
             <motion.div className='navbar_layout' initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
