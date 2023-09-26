@@ -1,0 +1,1112 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@1,600&display=swap');
+
+:root {
+
+
+  --color-navy: #000045;
+  --color-blue: #007EFF;
+  --color-orange: #FFA600;
+  --color-grey: #F1F1F4;
+  --color-white: #FFFFFF;
+
+  --font-italic: 'Brygada 1918', serif;
+
+}
+
+body {
+  margin: 2rem;
+  background-color: var(--color-grey);
+  overflow-y: scroll;
+}
+
+@font-face {
+  font-family: 'Nimbus Sans D OT Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Nimbus Sans D OT Light'), url('/fonts/Nimbus-Sans-D-OT-Light_32752.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Nimbus Sans D OT Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Nimbus Sans D OT Bold'), url('/fonts/Nimbus-Sans-D-OT-Bold_32747.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Acumin Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Acumin Pro'), url('/fonts/Acumin-RPro.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Acumin Pro Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Acumin Pro Italic'), url('/fonts/Acumin-ItPro.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Acumin Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Acumin Pro Bold'), url('/fonts/Acumin-BdPro.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Acumin Pro Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Acumin Pro Bold Italic'), url('/fonts/Acumin-BdItPro.woff') format('woff');
+}
+
+.font-nimbus {
+  font-family: 'Nimbus Sans D OT Light', sans-serif;
+  font-size: 20px;
+
+}
+
+.font-nimbus_bold {
+  font-family: 'Nimbus Sans D OT Bold';
+}
+
+.font-acumin {
+  font-family: 'Acumin Pro';
+  font-size: 20px;
+}
+
+.brand {
+  font-family: 'Acumin Pro Bold';
+  color: var(--color-blue);
+  margin: 0;
+  letter-spacing: -1px;
+  padding: 0;
+}
+
+.brand span {
+  font-family: 'Acumin Pro';
+  font-weight: 300;
+}
+
+.button_orange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: .3rem;
+  width: 7.125rem;
+  height: 24px;
+  font-family: "Acumin Pro";
+  font-size: 12px;
+  position: relative;
+  border: none;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.button_orange a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.button_orange::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -14.5px;
+  /* adjust the size of the triangle here */
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 15px solid var(--color-orange);
+}
+
+.button_orange:hover {
+  transform: translateX(1rem);
+  transition: .3s ease-in-out;
+}
+
+.arrow_right {
+  font-size: 30px;
+  margin: 0;
+  color: var(--color-white);
+}
+
+.navbar_layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-navy);
+  border-radius: 30px;
+  height: 3rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.LogoLight {
+  margin-left: 1rem;
+}
+
+.nav_link-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  height: 100%;
+  z-index: 100;
+}
+
+.nav_link-container a {
+  color: var(--color-blue);
+  border: solid 1px var(--color-blue);
+  border-radius: 20px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Section */
+
+.header_container {
+  border-radius: 40px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  height: 35vh;
+  margin-bottom: 1rem;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+}
+
+.header_content-container {
+  z-index: 100 !important;
+  margin: 2rem;
+  width: 100%;
+}
+
+.header_content-container h2 {
+  font-size: 64px;
+  letter-spacing: -3px;
+  font-family: 'Nimbus Sans D OT Light';
+  margin: 0;
+  width: auto;
+  color: var(--color-navy);
+}
+
+.header_content-container p {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'Nimbus Sans D OT Light';
+  margin: 0;
+  width: 50%;
+  color: var(--color-navy);
+  padding-bottom: 1rem;
+}
+
+/* Intro Section */
+
+.intro_container {
+  border-radius: 40px;
+  position: relative;
+  /* background-image: url('/images/background3.png'); */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 50vh;
+  padding: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+.intro_image {
+  border-radius: 40px;
+  z-index: -1;
+}
+
+.intro_button-container {
+  width: 100%;
+  padding: 0 0rem;
+
+}
+
+.intro_button-container button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  height: 50px;
+  border: none;
+  background-color: var(--color-blue);
+  font-size: 16px;
+  padding: .5rem 1rem 0 1rem;
+  cursor: pointer;
+  font-family: "Acumin Pro";
+  color: var(--color-white);
+}
+
+.intro_card-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.intro_card {
+  background-color: rgba(241, 241, 244, 0.7);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: flex-end;
+
+}
+
+.card_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-navy);
+  font-family: "Acumin Pro";
+  margin: 0 1rem;
+
+}
+
+.intro_card-dark {
+  background: none;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: solid 1px var(--color-grey);
+}
+
+.card_dark-content {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.card_dark-content p {
+  font-size: 20px !important;
+}
+
+.card_dark-content p span {
+  font-family: var(--font-italic);
+
+}
+
+.intro_card-dark p {
+  color: var(--color-grey);
+  font-family: "Nimbus Sans D OT Light";
+  font-size: 16px;
+}
+
+.intro_card-dark button {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+/* Our Work Summary Section */
+
+.work_summary-container {
+  height: 110vh;
+  position: relative;
+  border-radius: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.work_background {
+  z-index: -1;
+  border-radius: 40px;
+}
+
+.work_summary-card {
+  border-radius: 20px;
+  border: solid 1px var(--color-navy);
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.work_card-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-navy);
+  font-family: "Acumin Pro";
+  gap: 1rem;
+}
+
+.work_card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+}
+
+.work_card-content p {
+  font-size: 16px;
+}
+
+.work_card-content button {
+
+  margin-right: 1rem;
+}
+
+/* Why Section */
+
+.why_container {
+  border-radius: 40px;
+  border: solid 1px var(--color-navy);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  height: ato;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.why_heading {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-navy);
+  font-family: "Acumin Pro";
+  gap: .5rem;
+  font-size: 20px !important;
+}
+
+.why_left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  padding: 1rem;
+}
+
+.why_left-container p {
+  font-size: 26px;
+  width: 100%;
+  color: var(--color-navy);
+}
+
+.why_left-container p span {
+  font-family: var(--font-italic) !important;
+  color: var(--color-blue);
+}
+
+.why_left-container a {
+  width: 95%;
+  margin: .5rem;
+}
+
+.why_button1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  border: solid 1px var(--color-blue);
+  height: 50px;
+  background-color: transparent;
+  font-size: 16px;
+  padding: .5rem 1rem 0 1rem;
+  cursor: pointer;
+  font-family: "Acumin Pro";
+  color: var(--color-blue);
+
+}
+
+.why_button2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  height: 50px;
+  border: none;
+  background-color: var(--color-blue);
+  font-size: 16px;
+  padding: .5rem 1rem 0 1rem;
+  cursor: pointer;
+  font-family: "Acumin Pro";
+  color: var(--color-white);
+}
+
+.why_right-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(300px, auto);
+  /* This forces a minimum height */
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.why_card {
+  border: 1px solid var(--color-navy);
+  border-radius: 20px;
+  /* Just for visualization */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* Makes the card stretch to fit its grid cell */
+}
+
+.why_card:nth-child(1) {
+  background-color: var(--color-navy);
+}
+
+.why_card:nth-child(3) {
+  grid-column: span 2;
+  justify-content: flex-start;
+  /* Makes the third card span two columns */
+}
+
+.years-1 {
+  color: var(--color-blue);
+  font-size: 128px;
+  margin: 0;
+  margin-left: 1rem;
+
+}
+
+.years-2 {
+  color: var(--color-navy);
+  font-size: 128px;
+  margin: 0;
+  margin-left: 1rem;
+
+}
+
+.years-1 span {
+  font-size: 16px;
+}
+
+.years-2 span {
+  font-size: 16px;
+}
+
+.card1_text {
+  color: var(--color-blue);
+  font-size: 20px;
+  margin: 0;
+}
+
+.card2_text {
+  color: var(--color-navy);
+  font-size: 20px;
+  margin: 0;
+}
+
+.mac_image-container {
+  width: 100%;
+  border-radius: 40px;
+  height: 40%;
+  position: relative;
+}
+
+.mac {
+  border-radius: 40px;
+
+}
+
+.why_card:nth-child(3) p {
+  font-size: 20px;
+}
+
+.line {
+  width: 100%;
+  border: none;
+  /* Remove default border */
+  border-top: 1px solid var(--color-navy);
+  /* Add a top border */
+  margin: 0;
+}
+
+
+/* CTA Section */
+
+.cta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  height: 60vh;
+  gap: 1.5rem;
+}
+
+.cta_background {
+  border-radius: 40px;
+  z-index: -1;
+}
+
+.cta h1 {
+  font-size: 32px;
+}
+
+.cta h3 {
+  font-size: 96px;
+  color: var(--color-grey);
+  font-family: 'Nimbus Sans D OT Light';
+  margin: 0;
+  letter-spacing: -3px;
+}
+
+.cta p {
+  font-size: 20px;
+  color: var(--color-grey);
+  margin: 0;
+}
+
+.brand_container h1 {
+  font-size: 64px;
+  letter-spacing: -5px !important;
+  margin: 10rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  border: solid 1px var(--color-navy);
+  border-radius: 40px;
+  height: 7rem;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+.footer_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer_bottom form {
+  max-height: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+}
+
+.footer_bottom form label {
+  display: none;
+
+}
+
+.footer_bottom form input {
+  background-color: transparent;
+  border: solid 1px var(--color-navy);
+  border-radius: 20px;
+  padding: 1rem;
+
+}
+
+
+.footer_bottom form textArea {
+  background-color: transparent;
+  border: solid 1px var(--color-navy);
+  border-radius: 20px;
+  padding: .7rem 1rem;
+
+}
+
+/* For Chrome, Safari, and newer versions of Opera */
+textarea::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+
+/* For Firefox */
+textarea {
+  scrollbar-width: none;
+  /* Firefox 64+ */
+  overflow: -moz-scrollbars-none;
+  /* older Firefox versions */
+}
+
+/* For IE and Edge */
+textarea {
+  -ms-overflow-style: none;
+}
+
+.footer_bottom form button {
+  background-color: var(--color-navy);
+  border: none;
+  border-radius: 20px;
+  padding: .7rem 1rem;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.footer_legal-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer_legal-links a {
+  color: var(--color-navy);
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 1rem;
+}
+
+/* Services Page */
+
+.solutions_left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 2rem;
+  width: 100%;
+  background-color: rgba(241, 241, 244, 0.8);
+}
+
+.solutions_left-container p {
+  font-size: 26px;
+  color: var(--color-navy);
+}
+
+.solutions_left-container p span {
+  font-family: var(--font-italic);
+  color: var(--color-blue);
+}
+
+.services_right-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  border-radius: 40px;
+  padding: 1rem;
+  border: solid 1px var(--color-navy);
+}
+
+.solutions_right {
+  width: 100%;
+}
+
+.solutions_card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.services_card-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 22px;
+  gap: .5rem;
+  color: var(--color-navy);
+  border-bottom: solid 1px var(--color-blue);
+  padding-bottom: .5rem;
+  cursor: pointer;
+}
+
+.card_subtitle {
+  font-family: var(--font-italic);
+  color: var(--color-blue);
+  font-size: 24px;
+  margin: 0;
+}
+
+.service_heading {
+
+  display: flex;
+  gap: .5rem;
+  font-size: 20px !important;
+}
+
+.service_card-text {
+  font-size: 20px;
+  color: var(--color-navy);
+}
+
+.solution_heading-icon {
+  color: var(--color-blue);
+}
+
+
+/* Contact section */
+
+
+
+.contact_container {
+  position: relative;
+  padding: 2rem;
+
+}
+
+.contact_heading {
+  display: flex;
+  margin: 0 0 1rem 0;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--color-navy);
+  font-family: "Acumin Pro";
+  gap: .5rem;
+  font-size: 20px !important;
+}
+
+.contact_card-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.contact_form-container {
+  background-color: rgba(241, 241, 244, 0.9);
+  width: 50%;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contact_form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact_form-container form label {
+  display: none;
+}
+
+
+.contact_form-container form input {
+  border: none;
+  border-bottom: solid 1px var(--color-blue);
+  background-color: transparent;
+
+}
+
+.contact_form-container form textarea {
+  border: none;
+  border-bottom: solid 1px var(--color-blue);
+  background-color: transparent;
+}
+
+.contact_form-container form button {
+  border-radius: 20px;
+  border: none;
+  background-color: var(--color-blue);
+  height: 50px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 440px) {
+
+  body {
+    margin: 2rem 1rem;
+  }
+
+  .brand {
+    font-family: 'Acumin Pro Bold';
+    color: var(--color-blue);
+    margin: 0;
+    letter-spacing: -1px;
+    padding: 0 0 1rem 0;
+    font-size: 20px;
+  }
+
+  .brand span {
+    font-family: 'Acumin Pro';
+    font-weight: 300;
+  }
+
+
+  .nav_link-container {
+    display: none;
+  }
+
+  .LogoLight {
+    height: 30px;
+    margin-left: 0;
+  }
+
+  /* Header Section */
+
+  .header_container {
+
+    height: auto;
+
+  }
+
+
+  .header_content-container h2 {
+    font-size: 60px;
+    letter-spacing: -3px;
+    line-height: 50px;
+    font-family: 'Nimbus Sans D OT Light';
+    margin: 0;
+    width: 80%;
+    color: var(--color-navy);
+  }
+
+  .header_content-container p {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Nimbus Sans D OT Light';
+    margin: 1rem 0;
+    width: 90%;
+  }
+
+  /* Intro Section */
+
+  .intro_container {
+    border-radius: 40px;
+    position: relative;
+    /* background-image: url('/images/background3.png'); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+
+  }
+
+
+  .intro_button-container button {
+
+    width: 100%;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+
+  .intro_card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .intro_card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+
+  }
+
+  .intro_card-dark {
+
+    height: 100%;
+    width: auto;
+  }
+
+  .card_dark-content p {
+    font-size: 16px !important;
+  }
+
+  /* Our Work Summary Section */
+
+  .work_summary-container {
+    height: 70vh;
+    position: relative;
+    border-radius: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  .work_background {
+    z-index: -1;
+    border-radius: 40px;
+    height: 55% !important;
+  }
+
+  .work_summary-card {
+    width: auto;
+  }
+
+  .work_card-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-navy);
+    font-family: "Acumin Pro";
+    gap: 1rem;
+  }
+
+  .work_card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+  }
+
+
+  /* Why Section */
+
+  .why_container {
+    flex-direction: column;
+  }
+
+
+  .why_left-container {
+    width: auto;
+  }
+
+  .why_left-container p {
+    font-size: 20px;
+  }
+
+
+  .why_right-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .why_card:nth-child(3) {
+    height: 200px;
+  }
+
+  /* CTA Section */
+
+  .cta {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    height: auto;
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .cta_background {
+    border-radius: 40px;
+    z-index: -1;
+  }
+
+  .cta h1 {
+    font-size: 22px;
+  }
+
+  .cta h3 {
+    font-size: 36px;
+    color: var(--color-grey);
+    font-family: 'Nimbus Sans D OT Light';
+    margin: 0;
+    text-align: center;
+    letter-spacing: -1px;
+    line-height: 30px;
+  }
+
+  .cta p {
+    font-size: 16px;
+    color: var(--color-grey);
+    margin: 0;
+    text-align: center;
+  }
+
+  .brand_container h1 {
+    font-size: 64px;
+    letter-spacing: -5px !important;
+    margin: 10rem;
+  }
+
+  footer {
+
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .footer_bottom {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .footer_bottom form {
+    display: none;
+  }
+
+
+  .footer_legal-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+  }
+
+
+}
