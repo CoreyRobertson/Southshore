@@ -888,6 +888,13 @@ textarea {
     font-weight: 300;
   }
 
+  .navbar_layout {
+    border-radius: 20px;
+    height: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
 
   .nav_link-container {
     display: none;
