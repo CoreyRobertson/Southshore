@@ -901,6 +901,12 @@ textarea {
 
   }
 
+  .header_content-container {
+    z-index: 100 !important;
+    margin: 0rem;
+    padding: 2rem;
+    width: auto;
+  }
 
   .header_content-container h2 {
     font-size: 60px;
@@ -916,6 +922,7 @@ textarea {
     font-size: 16px;
     line-height: 20px;
     font-family: 'Nimbus Sans D OT Light';
+    font-weight: 300;
     margin: 1rem 0;
     width: 90%;
   }
