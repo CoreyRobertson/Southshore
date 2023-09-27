@@ -118,7 +118,6 @@ const Solutions = () => {
 
     return (
         <motion.div className='services_right-container' variants={sectionVariants} initial="hidden" animate="visible" ref={ref}>
-
             <div className='solutions_left-container'>
                 <div>
                     <p className='service_heading font-acumin'><Image src='images/flag1.svg' alt='flag1' width={30} height={20} layout='dynamic' />Our Solutions</p>

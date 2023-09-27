@@ -59,7 +59,7 @@ const contactus = () => {
             animate={controls}
             variants={sectionVariants}
             className='contact_container'>
-            <Image className='intro_image' src='/images/background9.png' layout='fill' alt='BlueBackground9' quality={100} />
+            <Image className='intro_image' src='/images/background12.png' layout='fill' alt='BlueBackground12' quality={100} />
 
             <motion.div className='contact_card-container'
                 variants={containerVariants}

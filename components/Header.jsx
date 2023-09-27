@@ -1,24 +1,24 @@
-import React, { useEffect, useRef } from 'react';
-import { useRouter } from 'next/router';
+import React, { useEffect } from 'react';
+
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 
 const headerVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 10 },
     visible: {
         opacity: 1,
         y: 0,
         transition: {
             delay: 0.1,
-            duration: 0.4,
+            duration: .5,
             ease: "easeOut"
         }
     }
 };
 
 const childVariants = {
-    hidden: { opacity: 0, y: -20 },
+    hidden: { opacity: 0, y: -30 },
     visible: {
         opacity: 1,
         y: 0,
@@ -30,8 +30,6 @@ const childVariants = {
 };
 
 const Header = () => {
-    const videoRef = useRef();
-    const router = useRouter();
     const controls = useAnimation();
     const [ref, inView] = useInView({
         threshold: 0.1,
