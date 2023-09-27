@@ -818,6 +818,8 @@ textarea {
   display: flex;
   gap: .5rem;
   font-size: 20px !important;
+  border-bottom: 2px solid var(--color-navy);
+  padding-bottom: .1rem;
 }
 
 .service_card-text {

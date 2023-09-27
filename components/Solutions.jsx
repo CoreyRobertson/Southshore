@@ -120,7 +120,7 @@ const Solutions = () => {
         <motion.div className='services_right-container' variants={sectionVariants} initial="hidden" animate="visible" ref={ref}>
             <div className='solutions_left-container'>
                 <div>
-                    <p className='service_heading font-acumin'><Image src='images/flag1.svg' alt='flag1' width={30} height={20} layout='dynamic' />Our Solutions</p>
+                    <p className='service_heading font-acumin'><Image src='images/flag2.svg' alt='flag2' width={30} height={20} layout='dynamic' />Our Solutions</p>
                 </div>
                 <p className='font-nimbus'><span> We don’t just build websites—we craft digital experiences.</span> Every pixel we design, every line of code we deploy, is informed by meticulous research and a deep understanding of your brand's unique narrative. <span>Our expertise transcends traditional boundaries.</span> Imagine your brand, amplified by sleek design, powered by the unmatched performance of NextJS, and constantly echoing with engaging content that resonates with your audience. </p>
 
